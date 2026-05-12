@@ -10,7 +10,7 @@ namespace OldDragonCharacterCreator.Models
         public string Name { get; private set; }
         public Attributes Attributes { get; private set; }
         public CharacterClass CharClass { get; private set; }
-        public int HitPoints { get; private set; }
+        public int PontosDeVida { get; private set; }
 
         public Character(string name, IAttributeStrategy attributeStrategy, CharacterClass charClass)
         {
