@@ -1,6 +1,6 @@
 namespace OldDragonCharacterCreator.Models
 {
-    public abstract class CharacterClass
+    public abstract class CaracteristicaClass
     {
         public abstract string Name { get; }
         public abstract string Description { get; }
