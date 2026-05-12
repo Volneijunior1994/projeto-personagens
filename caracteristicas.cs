@@ -33,7 +33,7 @@ namespace OldDragonCharacterCreator.Models
             Console.WriteLine($"Nome: {Name}");
             Console.WriteLine($"Classe: {CharClass.Name}");
             Console.WriteLine($"Descrição: {CharClass.Description}");
-            Console.WriteLine($"Pontos de Vida (PV): {HitPoints} (Dado: d{CharClass.PontosDeVida} + Mod CON: {Attributes.GetModifier(Attributes.Constituicao)})");
+            Console.WriteLine($"Pontos de Vida (PV): {PontosDeVida} (Dado: d{CharClass.PontosDeVida} + Mod CON: {Attributes.GetModifier(Attributes.Constituicao)})");
             Console.WriteLine("\nAtributos:");
             Attributes.PrintAttributes();
             Console.WriteLine(new string('-', 40));
