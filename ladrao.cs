@@ -4,6 +4,6 @@ namespace OldDragonCharacterCreator.Models
     {
         public override string Name => "Ladrão";
         public override string Description => "Especialistas em furtividade, desarmar armadilhas e ataques furtivos.";
-        public override int HitDie => 6;
+        public override int PontosDeVida => 6;
     }
 }

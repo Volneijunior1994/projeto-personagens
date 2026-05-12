@@ -4,6 +4,6 @@ namespace OldDragonCharacterCreator.Models
     {
         public abstract string Name { get; }
         public abstract string Description { get; }
-        public abstract int HitDie { get; }
+        public abstract int PontosDeVida { get; }
     }
 }

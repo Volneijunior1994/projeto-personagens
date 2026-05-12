@@ -2,7 +2,7 @@ using System;
 
 namespace OldDragonCharacterCreator.Models
 {
-    public class Attributes
+    public class Attributos
     {
         public int Forca { get; set; }
         public int Destreza { get; set; }

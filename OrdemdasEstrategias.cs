@@ -10,7 +10,7 @@ namespace OldDragonCharacterCreator.Strategies
 
         public Attributes GenerateAttributes()
         {
-            return new Attributes
+            return new Attributos
             {
                 Forca = Roll3d6(),
                 Destreza = Roll3d6(),

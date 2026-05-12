@@ -4,6 +4,6 @@ namespace OldDragonCharacterCreator.Models
     {
         public override string Name => "Guerreiro";
         public override string Description => "Mestres do combate, proficientes com todas as armas e armaduras.";
-        public override int HitDie => 10;
+        public override int PontosDeVida => 10;
     }
 }

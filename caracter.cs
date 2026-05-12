@@ -15,16 +15,16 @@ namespace OldDragonCharacterCreator.Models
         public Character(string name, IAttributeStrategy attributeStrategy, CharacterClass charClass)
         {
             Name = name;
-            Attributes = attributeStrategy.GenerateAttributes();
+            Attributos = attributeStrategy.GenerateAttributes();
             CharClass = charClass;
-            CalculateHitPoints();
+            CalcularPontosDeVida();
         }
 
-        private void CalculateHitPoints()
+        private void CalcularPontosDeVida()
         {
-            int conModifier = Attributes.GetModifier(Attributes.Constituicao);
-            int baseHp = CharClass.HitDie + conModifier;
-            HitPoints = baseHp < 1 ? 1 : baseHp;
+            int conModifier = Attributes.GetModifier(Attributos.Constituicao);
+            int baseHp = CharClass.PontosDeVida + conModifier;
+            PontosDeVida = baseHp < 1 ? 1 : baseHp;
         }
 
         public void DisplayCharacterSheet()
@@ -33,7 +33,7 @@ namespace OldDragonCharacterCreator.Models
             Console.WriteLine($"Nome: {Name}");
             Console.WriteLine($"Classe: {CharClass.Name}");
             Console.WriteLine($"Descrição: {CharClass.Description}");
-            Console.WriteLine($"Pontos de Vida (PV): {HitPoints} (Dado: d{CharClass.HitDie} + Mod CON: {Attributes.GetModifier(Attributes.Constituicao)})");
+            Console.WriteLine($"Pontos de Vida (PV): {HitPoints} (Dado: d{CharClass.PontosDeVida} + Mod CON: {Attributes.GetModifier(Attributes.Constituicao)})");
             Console.WriteLine("\nAtributos:");
             Attributes.PrintAttributes();
             Console.WriteLine(new string('-', 40));

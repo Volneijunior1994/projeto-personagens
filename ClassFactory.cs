@@ -11,7 +11,6 @@ namespace OldDragonCharacterCreator.Factories
             {
                 "guerreiro" => new Guerreiro(),
                 "mago" => new Mago(),
-                "clerigo" => new Clerigo(),
                 "ladrao" => new Ladrao(),
                 _ => throw new ArgumentException("Classe inválida.")
             };

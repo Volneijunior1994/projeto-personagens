@@ -4,6 +4,6 @@ namespace OldDragonCharacterCreator.Models
     {
         public override string Name => "Mago";
         public override string Description => "Estudiosos das artes arcanas, conjuram magias poderosas mas possuem pouca resistência.";
-        public override int HitDie => 4;
+        public override int PontosDeVida => 4;
     }
 }
